@@ -10,7 +10,7 @@ import os
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-llm = OpenAI(temperature=0, max_tokens=4096)
+llm = OpenAI(temperature=0)
 
 # Initiate data loaders
 if os.path.exists('./transactions_index.json'):
